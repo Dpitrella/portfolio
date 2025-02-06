@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Audiowide", serif;
+
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3E4380;
+
+}

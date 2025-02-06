@@ -1,0 +1,24 @@
+h2 {
+    color: #C0DAFF;
+}
+
+.first-name {
+    color: #F878FF;
+}
+
+.last-name,
+.email {
+    color: #5FFFAB;
+}
+
+p {
+    color: #C0DAFF;
+}
+
+.tele-cv {
+    height: 40px;
+    width: 220px;
+    border-radius: 10px;
+    background-color: #5FFFAB;
+    color: #3E4380;
+}

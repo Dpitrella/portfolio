@@ -1,0 +1,36 @@
+
+header {
+    writing-mode: vertical-lr;
+    background-color: #285D84;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+
+nav {
+    border-right: 1px solid #FFB980;
+    border-image: linear-gradient(to bottom, #285D84, #FFB980, #285D84) 1 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+    transform: rotate(-90deg);
+    list-style: none;
+    gap: 25px;
+    height: 12%;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    top: 40%;
+}
+
+/* Styles pour les liens du menu */
+.menu-link {
+    text-decoration: none;
+    color: #5FFFAB; /* Couleur initiale des liens */
+}
+/* Styles pour le lien actif */
+.menu-link.active {
+    color: #FFB980; /* Couleur orange pour le lien actif */
+}
