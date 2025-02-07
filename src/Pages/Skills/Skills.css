@@ -1,0 +1,26 @@
+img {
+    height: 80px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50%;
+}
+
+.soft-skills,
+p {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.soft-skills p {
+    color: #5FFFAB;
+    font-size: 22px;
+}

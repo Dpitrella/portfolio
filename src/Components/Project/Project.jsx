@@ -38,4 +38,6 @@ const Project = forwardRef(({
     );
 });
 
+Project.displayName = 'Project'; // Add this line for better debugging
+
 export default Project;
