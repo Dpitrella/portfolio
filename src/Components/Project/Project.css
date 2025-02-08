@@ -6,10 +6,8 @@
 }
 .project-content {
     background-color: #4C529D;
-    
     width: 100%;
-    
-    border: solid 2px  #FFB980;
+    border: solid 1px  #F878FF;
 }
 project-button {
     display: flex;
@@ -18,4 +16,11 @@ project-button {
 }
 .tecnos {
     color: #5FFFAB;
+}
+.project-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80px;
+    padding: 10px;
 }

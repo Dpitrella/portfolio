@@ -1,0 +1,122 @@
+/* Fond de la modale */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgb(0, 0, 0); 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000;
+    backdrop-filter: blur(100px); 
+    -webkit-backdrop-filter: blur(100px);
+    
+    animation: fadeIn 0.3s ease-out forwards; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.90;
+    }
+}
+
+
+
+.modal-content {
+    padding: 20px;
+    border-radius: 30px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.8); 
+    animation: slideIn 0.5s ease-out forwards; 
+    box-shadow: 0 0 20px 7px #F878FF, 
+                0 0 100px    #5FFFAB; 
+    height: 100%;
+    font-size: 28px;
+}
+
+
+
+
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 35px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    font-size: 50px;
+}
+
+.modal-content img {
+    height: 300%;
+    max-width: 800px;
+    border-radius: 12px;
+    
+    margin: 20px 0%;
+}
+
+.modal-subtext {
+    text-align: center;
+    max-width: 680px;
+    font-size: 23px;
+    padding: 5px;
+}
+
+.modal-title {
+    text-align: center;
+    margin-top: 40px;
+    color: #F878FF;
+}
+
+.modal-content p {
+    margin-bottom: 10px;
+}
+
+.modal-content a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #5FFFAB;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.modal-content a:hover {
+    background-color: #FFB980;
+    transform: translateY(-2px); 
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 5px; 
+    
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+ background-color: rgb(0, 0, 0);
+    border-radius: 5px; 
+}
+
+.modal-content::-webkit-scrollbar-track {
+    
+    border-radius: 5px; 
+    margin: 20px 0;
+}
+
+

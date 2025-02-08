@@ -3,8 +3,12 @@ import { useLocation } from 'react-router-dom';
 import './Portfolio.css';
 import Project from '../../Components/Project/Project'; 
 import Modal from '../../Components/Modal/Modal';
-import Projet1 from '../../Assets/projects/Homepage-Sophie-Bluel-modale.png';
-import Cover1 from '../../Assets/projects/Homepage-Sophie-Bluel.png';
+import Projet1 from '../../Assets/projects/projet-sophiebluel.webp';
+import Projet2 from '../../Assets/projects/projet-ninacarducci.webp'
+import Projet3 from '../../Assets/projects/projet-724events.webp'
+import Projet4 from '../../Assets/projects/projet-kasa.webp'
+import Projet5 from '../../Assets/projects/bank1.png'
+import Projet6 from '../../Assets/projects/myfood1.png'
 
 function Portfolio() {
     const [isVisible, setIsVisible] = useState(false);
@@ -18,7 +22,7 @@ function Portfolio() {
         {
             title: "Sophie Bluel",
             image: Projet1,
-            cover: Cover1,
+            
             description: "Une page web dynamique pour une architecte",
             details: "Utilisation d'une API pour gérer et filter les projets, la connexion de l'utilisateur et la persistance des données.",
             tecnos: "JAVASCRIPT, API",
@@ -26,6 +30,8 @@ function Portfolio() {
         },
         {
             title: "Photographe",
+            image: Projet2 ,
+           
             description: "Optimisation du référencement d'un site de photographe",
             details: "Utilisation de Lighthouse et WAVE pour optimiser la performance, le SEO, les bonnes pratiques et l'accessibilité du site.",
             tecnos: "SEO, ACCESSIBILITE",
@@ -33,6 +39,8 @@ function Portfolio() {
         },
         {
             title: "Agence événementielle",
+            image: Projet3 ,
+            
             description: "Debug d'un site d'une agence d'événementiel",
             details: "Utilisation des tests unitaires et d'intégration ainsi que des Devtools pour debugger une application React.",
             tecnos: "REACT, DEVTOOLS",
@@ -40,6 +48,8 @@ function Portfolio() {
         },
         {
             title: "Location immobilière",
+            image:  Projet4,
+            
             description: "Application de location immobilière",
             details: "Utilisation de React pour gérer l'application en composants réutilisables",
             tecnos: "SASS, REACT",
@@ -47,6 +57,8 @@ function Portfolio() {
         },
         {
             title: "ArgentBank",
+            image:  Projet5,
+            
             description: "Banque en ligne",
             details: "Visiter la page d'accueil, se connecter au système, gérer des erreurs, déconnecter du système,",
             tecnos: "JS, REACT, REDUX",
@@ -54,6 +66,8 @@ function Portfolio() {
         },
         {
             title: "Ohmyfood",
+            image:  Projet6,
+            
             description: "Mobile first,",
             details: "Améliorer l'interface d'un site mobile avec des animations CSS",
             tecnos: "CSS, SASS,",
@@ -120,7 +134,7 @@ function Portfolio() {
                     <Project
                         key={index}
                         title={project.title}
-                        image={project.cover || project.image}
+                        image={project.image}
                         description={project.description}
                         tecnos={project.tecnos}
                         className={`project-${index + 1} ${isVisible ? 'animate' : ''}`}
