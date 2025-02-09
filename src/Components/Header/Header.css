@@ -27,12 +27,19 @@ ul {
     padding: 0%;
 }
 
-/* Styles pour les liens du menu */
 .menu-link {
     text-decoration: none;
-    color: #5FFFAB; /* Couleur initiale des liens */
+    color: #5FFFAB; 
+    
 }
 /* Styles pour le lien actif */
 .menu-link.active {
-    color: #FFB980; /* Couleur orange pour le lien actif */
+    color: #FFB980;
+
+}
+li {
+    transition: transform 0.5s ease;
+}
+li:hover {
+    transform: scale(1.2);
 }

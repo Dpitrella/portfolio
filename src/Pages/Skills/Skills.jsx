@@ -1,19 +1,35 @@
 import React from 'react'
 import './Skills.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../../fontawesome'
+const icons = [
+    { name: 'html5', color: "#ff4242", alt: 'HTML' },
+    { name: 'css3-alt', color: "#039be5", alt: 'CSS' },
+    { name: 'square-js', color: "#f7df1e", alt: 'JS' },
+    { name: 'react', color: "#80deea", alt: 'REACT' },
+    { name: 'node', color: "#5fffab", alt: 'NODE.JS' },
+    { name: 'sass', color: "#fd3e30", alt: 'SASS' }
+];
+const getIcon = (iconName, color, alt) => {
+    return (
+      <div className="icon-container">
+        <FontAwesomeIcon className='language' icon={['fab', iconName]} style={{ color: color }} />
+        <div className="icon-alt">{alt}</div>
+      </div>
+    );
+  };
 
-import logo2 from '../../Assets/logos/javascript-logo.webp'
-import logo3 from '../../Assets/logos/react-logo.webp'
-import logo4 from '../../Assets/logos/css-logo.webp'
-import logo1 from '../../Assets/logos/html-logo.webp'
+
 
 function Skills() {
     return (
         <div className='skills-content'>
-            <div className='img-skils'>
-                <img src={logo1} alt=" Logo HTML" />
-                <img src={logo2} alt=" Logo JS" />
-                <img src={logo3} alt=" Logo React" />
-                <img src={logo4} alt=" Logo CSS" />
+            <div className='icon-skills'>
+            {icons.map(icon => (
+                <div key={icon.name} className="icon-wrapper">
+                    {getIcon(icon.name, icon.color, icon.alt)}
+                </div>
+            ))}
             </div>
             <div className='soft-skills'>
                 <p>Adaptabilité </p>

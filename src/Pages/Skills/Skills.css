@@ -1,8 +1,8 @@
-img {
-    height: 80px;
-    margin: 40px;
+.icon-skills {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    font-size: 70px;
 }
 
 .skills-content {
@@ -23,4 +23,49 @@ p {
 .soft-skills p {
     color: #5FFFAB;
     font-size: 22px;
+    transition: transform 0.5s ease;
+}
+
+.soft-skills p:hover {
+    cursor: default;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.icon-container {
+    transition: transform 0.5s ease;
+}
+
+.icon-wrapper:hover .icon-container {
+    transform: scale(1.2);
+}
+
+.icon-alt {
+    position: absolute;
+    top: 100%;
+    justify-content: center;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #C0DAFF;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.icon-wrapper:hover .icon-alt {
+    opacity: 1;
 }

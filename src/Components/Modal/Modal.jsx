@@ -32,6 +32,13 @@ export default function Modal({ isOpen, onClose, project }) {
         }
     };
 
+    const gitPages = (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            window.open(project.pagesLink, '_blank', 'noopener,noreferrer');
+        }
+    };
+
     return (
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -51,6 +58,22 @@ export default function Modal({ isOpen, onClose, project }) {
                 >
                     <span>Le code sur Github</span>
                 </a>
+
+                {/* Renderiza el botón Git Pages solo si pagesLink existe */}
+                {project.pagesLink && (
+                    <a 
+                        href={project.pagesLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="modal-github-link"
+                        ref={linkRef}
+                        onKeyDown={gitPages}
+                        tabIndex={0}
+                    >
+                        <span>Sur git-pages</span>
+                    </a>
+                )}
+
                 <img src={project.image} alt={project.title} />
             </div>
         </div>

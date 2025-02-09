@@ -21,6 +21,11 @@ p {
     border-radius: 10px;
     background-color: #5FFFAB;
     color: #3E4380;
+    transition: transform 0.5s ease;
+}
+.tele-cv:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .moi {
     display: flex;

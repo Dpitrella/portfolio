@@ -8,12 +8,13 @@
     background-color: #4C529D;
     width: 100%;
     border: solid 1px  #F878FF;
+    transition: transform 0.5s ease;
 }
-project-button {
-    display: flex;
-    
-    
+.project-content:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
+
 .tecnos {
     color: #5FFFAB;
 }

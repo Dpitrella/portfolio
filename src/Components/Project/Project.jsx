@@ -7,6 +7,7 @@ const Project = forwardRef(({
     description,
     tecnos,
     className,
+    
     onClick, 
 }, ref) => {
     return (

@@ -22,16 +22,17 @@ function Portfolio() {
         {
             title: "Sophie Bluel",
             image: Projet1,
-            
+            pagesLink: "",
             description: "Une page web dynamique pour une architecte",
             details: "Utilisation d'une API pour gérer et filter les projets, la connexion de l'utilisateur et la persistance des données.",
             tecnos: "JAVASCRIPT, API",
             githubLink: "https://github.com/Dpitrella/pro-6.git",
+            
         },
         {
             title: "Photographe",
             image: Projet2 ,
-           
+            pagesLink: "https://dpitrella.github.io/proj-8/",
             description: "Optimisation du référencement d'un site de photographe",
             details: "Utilisation de Lighthouse et WAVE pour optimiser la performance, le SEO, les bonnes pratiques et l'accessibilité du site.",
             tecnos: "SEO, ACCESSIBILITE",
@@ -40,7 +41,7 @@ function Portfolio() {
         {
             title: "Agence événementielle",
             image: Projet3 ,
-            
+            pagesLink: "",
             description: "Debug d'un site d'une agence d'événementiel",
             details: "Utilisation des tests unitaires et d'intégration ainsi que des Devtools pour debugger une application React.",
             tecnos: "REACT, DEVTOOLS",
@@ -49,7 +50,7 @@ function Portfolio() {
         {
             title: "Location immobilière",
             image:  Projet4,
-            
+            pagesLink: "",
             description: "Application de location immobilière",
             details: "Utilisation de React pour gérer l'application en composants réutilisables",
             tecnos: "SASS, REACT",
@@ -58,7 +59,7 @@ function Portfolio() {
         {
             title: "ArgentBank",
             image:  Projet5,
-            
+            pagesLink: "",
             description: "Banque en ligne",
             details: "Visiter la page d'accueil, se connecter au système, gérer des erreurs, déconnecter du système,",
             tecnos: "JS, REACT, REDUX",
@@ -67,7 +68,7 @@ function Portfolio() {
         {
             title: "Ohmyfood",
             image:  Projet6,
-            
+            pagesLink: "https://dpitrella.github.io/projet-ohmyfood/",
             description: "Mobile first,",
             details: "Améliorer l'interface d'un site mobile avec des animations CSS",
             tecnos: "CSS, SASS,",
