@@ -1,7 +1,9 @@
 .icon-skills {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    
+    text-align: center;
+    gap: 30px;
     font-size: 70px;
 }
 
@@ -9,7 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 50%;
+    gap: 250px;
 }
 
 .soft-skills,

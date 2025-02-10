@@ -40,10 +40,12 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   button:hover {
     background-color: #FFB980;
+    transform: translateY(-2px);
   }
   
   button:disabled {

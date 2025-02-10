@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './Modal.css';
 
+
 export default function Modal({ isOpen, onClose, project }) {
     const linkRef = useRef(null);
 
@@ -47,6 +48,9 @@ export default function Modal({ isOpen, onClose, project }) {
                 </button>
                 <p className="modal-title"><strong>{project.description}</strong></p>
                 <p className="modal-subtext">{project.details}</p>
+                <div className="modal-tech-icons">
+                    {project.tecnos}
+                </div>
                 <a 
                     href={project.githubLink} 
                     target="_blank" 
@@ -59,7 +63,7 @@ export default function Modal({ isOpen, onClose, project }) {
                     <span>Le code sur Github</span>
                 </a>
 
-                {/* Renderiza el botón Git Pages solo si pagesLink existe */}
+                
                 {project.pagesLink && (
                     <a 
                         href={project.pagesLink} 

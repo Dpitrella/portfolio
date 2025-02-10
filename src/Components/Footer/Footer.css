@@ -1,0 +1,22 @@
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff9d4c98;
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    border-radius: 20px 0px 0px 20px;
+    margin: 50px 0px;
+
+    overflow: hidden;
+    right: 0%;
+    transition: transform 0.5s ease;
+    transform: translateX(100px);
+    transform-origin: right;
+}
+
+.footer-content:hover {
+    transform: translateX(0px);
+  
+}

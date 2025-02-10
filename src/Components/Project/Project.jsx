@@ -32,13 +32,13 @@ const Project = forwardRef(({
                 />
                 <div className="project-txt">
                     <p>{description}</p>
-                    <p className='tecnos'>/ {tecnos}</p>
+                    <p className='tecnos'>{tecnos}</p>
                 </div>
             </div>
         </div>
     );
 });
 
-Project.displayName = 'Project'; // Add this line for better debugging
+Project.displayName = 'Project'; 
 
 export default Project;
