@@ -6,13 +6,16 @@
 .oc {
     display: flex;
     align-items: center;
-    border: 2px solid #FFB980;
+    border: 1px solid #FFB980;
     padding: 15px;
     background-color: #4C529D;
     border-radius: 20px;
     gap: 20px;
     font-size: 15px;
-
+    transition: transform 0.5s ease;
+}
+.oc:hover {
+    transform: scale(1.05);
 }
 .oc-text {
     display: flex;
