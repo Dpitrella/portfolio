@@ -11,7 +11,7 @@ function Footer() {
             <a href="https://github.com/Dpitrella" target="blanck" alt="Vers mon github">
                 <FontAwesomeIcon icon="fa-brands fa-github" style={{ color: "#5fffab", }} />
             </a>
-            <a href="www.linkedin.com/in/dante-pitrella-b4b250302" target="blanck" alt="Vers mon Linkedin">
+            <a href="https://linkedin.com/in/dante-pitrella-b4b250302"  target="blanck" alt="Vers mon Linkedin">
                 <FontAwesomeIcon icon="fa-brands fa-linkedin" style={{ color: "#5fffab", }} />
             </a>
 
