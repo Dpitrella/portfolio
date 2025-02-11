@@ -27,4 +27,12 @@
     justify-content: space-around;
     height: 80px;
     padding: 10px;
+    
+}
+.project-txt p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFB980;
+    font-size: 18px;
 }

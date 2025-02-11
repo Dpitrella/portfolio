@@ -4,8 +4,7 @@
     align-items: center;
     grid-template-columns: 300px 300px 300px;
     gap: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 90px;
     
 }
 
