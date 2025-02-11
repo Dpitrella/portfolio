@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import './Modal.css';
 
-
 export default function Modal({ isOpen, onClose, project }) {
     const linkRef = useRef(null);
+    const modalContentRef = useRef(null);
 
     useEffect(() => {
         const handleKeyDown = (e) => {
@@ -12,7 +12,10 @@ export default function Modal({ isOpen, onClose, project }) {
             }
         };
 
+        const originalStyle = window.getComputedStyle(document.body).overflow;
+
         if (isOpen) {
+            document.body.style.overflow = 'hidden';
             document.addEventListener('keydown', handleKeyDown);
             if (linkRef.current) {
                 linkRef.current.focus();
@@ -20,6 +23,7 @@ export default function Modal({ isOpen, onClose, project }) {
         }
 
         return () => {
+            document.body.style.overflow = originalStyle;
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, [isOpen, onClose]);
@@ -40,9 +44,19 @@ export default function Modal({ isOpen, onClose, project }) {
         }
     };
 
+    const handleWheel = (e) => {
+        e.stopPropagation();
+    };
+
     return (
         <div className="modal-overlay" onClick={onClose}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div 
+                className="modal-content" 
+                onClick={(e) => e.stopPropagation()}
+                ref={modalContentRef}
+                onWheel={handleWheel}
+            >
+                
                 <button className="modal-close" onClick={onClose}>
                     &times;
                 </button>
@@ -63,14 +77,12 @@ export default function Modal({ isOpen, onClose, project }) {
                     <span>Le code sur Github</span>
                 </a>
 
-                
                 {project.pagesLink && (
                     <a 
                         href={project.pagesLink} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="modal-github-link"
-                        ref={linkRef}
                         onKeyDown={gitPages}
                         tabIndex={0}
                     >

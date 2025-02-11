@@ -1,74 +1,67 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
-    const [activeLink, setActiveLink] = useState(window.location.pathname);
-    const [moiColor, setMoiColor] = useState(window.location.pathname === '/' ? '#FFB980' : '#5FFFAB');
+    const location = useLocation(); // Hook para obtener la ruta actual
+    const [activeLink, setActiveLink] = useState(location.pathname);
+    const [moiColor, setMoiColor] = useState(location.pathname === '/' ? '#FFB980' : '#5FFFAB');
 
     useEffect(() => {
-        const handleRouteChange = () => {
-            setActiveLink(window.location.pathname);
-            setMoiColor(window.location.pathname === '/' ? '#FFB980' : '#5FFFAB');
-        };
-
-        handleRouteChange();
-
-        window.addEventListener('popstate', handleRouteChange);
-
-        return () => {
-            window.removeEventListener('popstate', handleRouteChange);
-        };
-    }, []);
+        // Actualiza el estado cuando cambia la ubicación
+        setActiveLink(location.pathname);
+        setMoiColor(location.pathname === '/' ? '#FFB980' : '#5FFFAB');
+    }, [location]);
 
     return (
         <header>
             <nav>
                 <ul>
                     <li>
-                        <a
-                            area-label="Aller à Accueil"
+                        <Link
+                            aria-label="Aller à Accueil"
                             className={`menu-link ${activeLink === '/' ? 'active' : ''}`}
-                            href="/"
+                            to="/"
                             style={{ color: moiColor }}
                         >
                             MOI
-                        </a>
+                        </Link>
                     </li>
                     <li className='portfolio'>
-                        <a
-                            area-label="Aller a Portfolio"
+                        <Link
+                            aria-label="Aller à Portfolio"
                             className={`menu-link ${activeLink === '/portfolio' ? 'active' : ''}`}
-                            href='/portfolio'
+                            to='/portfolio'
                         >
                             PORTFOLIO
-                        </a>
+                        </Link>
                     </li>
                     <li className='skills'>
-                        <a
-                            area-label="Aller a Skills"
+                        <Link
+                            aria-label="Aller à Skills"
                             className={`menu-link ${activeLink === '/skills' ? 'active' : ''}`}
-                            href='/skills'
+                            to='/skills'
                         >
                             SKILLS
-                        </a>
+                        </Link>
                     </li>
                     <li className='formation'>
-                        <a
-                            area-lebel="Aller a Formation"
+                        <Link
+                            aria-label="Aller à Formation"
                             className={`menu-link ${activeLink === '/formation' ? 'active' : ''}`}
-                            href='/formation'
+                            to='/formation'
                         >
                             FORMATION
-                        </a>
+                        </Link>
                     </li>
                     <li className='contact'>
-                        <a
-                            area-lebel="Aller a Contact"
+                        <Link
+                            aria-label="Aller à Contact"
                             className={`menu-link ${activeLink === '/contact' ? 'active' : ''}`}
-                            href='/contact'
+                            to='/contact'
                         >
                             CONTACT
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
@@ -77,4 +70,3 @@ function Header() {
 }
 
 export default Header;
-
