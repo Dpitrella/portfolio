@@ -62,4 +62,10 @@
     color: red;
     margin-top: 10px;
   }
-  
+  /* tablet */
+  @media (max-width: 1024px) {
+    .contact-form {
+      margin: 236px 0px 237px 120px;
+      
+    }
+  }

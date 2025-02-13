@@ -32,11 +32,17 @@ function Skills() {
             ))}
             </div>
             <div className='soft-skills'>
+                <p>Español</p>
+                <p>Français</p>
+                <p>Italiano</p>
+                <p>English</p>
                 <p>Adaptabilité </p>
                 <p>Logique</p>
                 <p>Communication</p>
                 <p>Polyvalence</p>
+                <p>Agile method</p>
                 <p>Organisation</p>
+
             </div>
         </div>
 

@@ -1,9 +1,38 @@
 h2 {
     color: #C0DAFF;
 }
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(20px)  translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+.moi-content {
+    display: flex;
+    flex-direction: row;
+}
+.float-animation {
+    animation: float 5s ease-in-out infinite;
+}
+.cont-photo {
+    right: 10%;
+    width: 200px;
+}
+.photo{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50px;
+}
 
 .first-name {
     color: #F878FF;
+    
 }
 
 .last-name,
@@ -34,5 +63,40 @@ p {
 }
 .info {
     display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.contact-me {
+    display: flex;
     flex-direction: row;
+    gap: 0%;
+    width: 100%;
+}
+/* tablet */
+@media (max-width: 1024px) {
+    h1 {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;  
+      gap: 10px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    .moi {
+        align-items: center;
+        gap: 50px;
+        margin-top: 100px;
+        
+    }
+    .moi-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 58px;
+    }
+}
+/* phone */
+@media (max-width: 768px) {
+
 }

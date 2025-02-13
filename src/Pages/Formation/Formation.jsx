@@ -1,6 +1,6 @@
 import './Formation.css'
 import oc from '../../Assets/logos/oc-logo. 1.png'
-import icon from '../../Assets/logos/icon _home icon_.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Formation() {
@@ -14,12 +14,30 @@ function Formation() {
                 </div>
             </a>
             <div className='oc'>
-                <img className='logo-1' src={icon} alt="Home Icon" />
+                <FontAwesomeIcon icon="fa-solid fa-code" style={{ color: "#ffffff", }} />
                 <div className='oc-text'>
                     <h2>Autodidacte</h2>
-                    <FontAwesomeIcon icon="fa-solid fa-infinity" style={{color: "#C0DAFF",}} />
+                    <FontAwesomeIcon icon="fa-solid fa-infinity" style={{ color: "#C0DAFF", }} />
                 </div>
             </div>
+
+
+            <div className='oc'>
+                <FontAwesomeIcon icon="fa-solid fa-music" style={{ color: "#ffffff", }} />
+                <div className='oc-text'>
+                    <h2>Violoncelliste</h2>
+                    <p>Conservatoire - 4 ans</p>
+                </div>
+            </div>
+            <div className='oc'>
+                <FontAwesomeIcon icon="fa-solid fa-camera" style={{ color: "#ffffff", }} />
+                <div className='oc-text'>
+                    <h2>Photographie</h2>
+                    <p>Autodidacte </p>
+
+                </div>
+            </div>
+
         </div>
     )
 }

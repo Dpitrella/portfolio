@@ -11,14 +11,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 250px;
-}
 
+}
+.soft-skills {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
 .soft-skills,
 p {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 .soft-skills p {
@@ -31,12 +32,6 @@ p {
     cursor: default;
     transform: scale(1.2);
 }
-
-
-
-
-
-
 
 .icon-wrapper {
     position: relative;
@@ -69,4 +64,20 @@ p {
 
 .icon-wrapper:hover .icon-alt {
     opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding: 65px 0px 65px 0px;
+        
+    }
+    .soft-skills {
+        text-align: center;
+    }
+    .icon-skills {
+        margin-top: 20px;
+    }
 }

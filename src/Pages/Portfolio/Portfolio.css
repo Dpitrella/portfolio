@@ -11,3 +11,11 @@
 .project {
     background-color: #4C529D;
 }
+
+/* tablet */
+@media (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: 300px 300px ;
+        margin: 10px 0px 0px 20px;
+    }
+}

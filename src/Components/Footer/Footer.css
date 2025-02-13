@@ -12,11 +12,24 @@
     overflow: hidden;
     right: 0%;
     transition: transform 0.5s ease;
-    transform: translateX(100px);
+    transform: translateX(80px);
     transform-origin: right;
 }
 
 .footer-content:hover {
     transform: translateX(0px);
-  
+
+}
+
+
+/* tablet */
+@media (max-width: 1024px) {
+    .footer-content {
+        width: 100%;
+        transform: translateX(0px);
+        border-radius: 0%;
+        height: 100px;
+        bottom: 10px;
+        margin: 50px 0px 0px;
+    }
 }
