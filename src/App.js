@@ -9,7 +9,7 @@ import Moi from './Pages/Moi/Moi'
 import ScrollBasedNavigation from './Components/ScrollBasedNavigation';
 
 
-import previewImage from '../public/2025-02-13.png';
+
 
 function App() {
   return (
@@ -20,11 +20,11 @@ function App() {
           <meta name="description" content="Portfolio de Dante Pitrella - Développeur Web" />
           <meta property="og:title" content="Dante Pitrella - Portfolio" />
           <meta property="og:description" content="Portfolio de Dante Pitrella - Développeur Web créatif et passionné" />
-          <meta property="og:image" content={previewImage} />
+          <meta property="og:image" content={`${process.env.PUBLIC_URL}/2025-02-13.webp`} />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:title" content="Dante Pitrella - Portfolio" />
           <meta property="twitter:description" content="Portfolio de Dante Pitrella - Développeur Web créatif et passionné" />
-          <meta property="twitter:image" content={previewImage} />
+          <meta property="twitter:image" content={`${process.env.PUBLIC_URL}/2025-02-13.webp`} />
         </Helmet>
         <ScrollBasedNavigation>
           <Routes>
