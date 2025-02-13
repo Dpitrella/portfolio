@@ -81,3 +81,9 @@ p {
         margin-top: 20px;
     }
 }
+@media (max-width: 767px) {
+    .soft-skills {
+        grid-template-columns: 150px ;
+        font-size: 10px;
+    }
+}

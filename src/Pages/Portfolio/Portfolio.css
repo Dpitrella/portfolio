@@ -19,3 +19,11 @@
         margin: 10px 0px 0px 20px;
     }
 }
+
+/* phone */
+@media (max-width: 767px) {
+    .projects-container {
+        grid-template-columns: 300px;
+        margin: 0%;
+    }
+}

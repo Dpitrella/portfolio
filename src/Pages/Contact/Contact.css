@@ -9,7 +9,7 @@
     background-color: #4C529D;
     border: 1px solid #FFB980;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 17px 14px 9px rgba(0, 0, 0, 0.1);
   }
   
   .form-group {
@@ -65,7 +65,12 @@
   /* tablet */
   @media (max-width: 1024px) {
     .contact-form {
-      margin: 236px 0px 237px 120px;
+      margin: 168px 0px 169px 100px;
       
+    }
+  }
+  @media (max-width: 767px) {
+    .contact-form {
+      margin: 90px 20px 90px 20px;
     }
   }

@@ -8,7 +8,6 @@
     font-size: 25px;
     border-radius: 20px 0px 0px 20px;
     margin: 50px 0px;
-
     overflow: hidden;
     right: 0%;
     transition: transform 0.5s ease;
@@ -18,11 +17,14 @@
 
 .footer-content:hover {
     transform: translateX(0px);
-
 }
 
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
 
-/* tablet */
+/* tablet y teléfono */
 @media (max-width: 1024px) {
     .footer-content {
         width: 100%;
@@ -31,5 +33,16 @@
         height: 100px;
         bottom: 10px;
         margin: 50px 0px 0px;
+        justify-content: center;
+        
+    }
+
+    .arrow-icon {
+        display: none;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 100px;
     }
 }

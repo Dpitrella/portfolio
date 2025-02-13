@@ -1,0 +1,59 @@
+{
+    "projects": [
+      {
+        "title": "Sophie Bluel",
+        "image": "./projects/projet-sophiebluel.webp",
+        "pagesLink": "",
+        "description": "Sophie Bluel architecte",
+        "details": "Utilisation d'une API pour gérer et filter les projets, la connexion de l'utilisateur et la persistance des données.",
+        "tecnos": ["html5", "square-js"],
+        "githubLink": "https://github.com/Dpitrella/pro-6.git"
+      },
+      {
+        "title": "Photographe",
+        "image": "./projects/projet-ninacarducci.webp",
+        "pagesLink": "https://dpitrella.github.io/proj-8/",
+        "description": "Nina Carducci photographe",
+        "details": "Optimisation du référencement d'un site de photographe. Utilisation de Lighthouse et WAVE pour optimiser la performance, le SEO, les bonnes pratiques et l'accessibilité du site.",
+        "tecnos": ["css3-alt", "sass"],
+        "githubLink": "https://github.com/Dpitrella/proj-8.git"
+      },
+      {
+        "title": "Agence événementielle",
+        "image": "./projects/projet-724events.webp",
+        "pagesLink": "",
+        "description": "724 events",
+        "details": "Debug d'un site d'une agence d'événementiel. Utilisation des tests unitaires et d'intégration ainsi que des Devtools pour debugger une application React.",
+        "tecnos": ["react"],
+        "githubLink": "https://github.com/Dpitrella/proj-9.git"
+      },
+      {
+        "title": "Location immobilière",
+        "image": "./projects/projet-kasa.webp",
+        "pagesLink": "",
+        "description": "kasa",
+        "details": "Application de location immobilière. Utilisation de React pour gérer l'application en composants réutilisables",
+        "tecnos": ["sass", "react"],
+        "githubLink": "https://github.com/Dpitrella/proj-7.git"
+      },
+      {
+        "title": "ArgentBank",
+        "image": "./projects/bank1.png",
+        "pagesLink": "",
+        "description": "ArgentBank",
+        "details": "Banque en ligne. Visiter la page d'accueil, se connecter au système, gérer des erreurs, déconnecter du système.",
+        "tecnos": ["square-js", "react"],
+        "githubLink": "https://github.com/Dpitrella/projet-10.git"
+      },
+      {
+        "title": "Ohmyfood",
+        "image": "./projects/myfood1.png",
+        "pagesLink": "https://dpitrella.github.io/projet-ohmyfood/",
+        "description": "Ohmyfood",
+        "details": "Mobile first. Améliorer l'interface d'un site mobile avec des animations CSS.",
+        "tecnos": ["css3-alt", "sass"],
+        "githubLink": "https://github.com/Dpitrella/projet-ohmyfood.git"
+      }
+    ]
+  }
+  

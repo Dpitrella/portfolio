@@ -3,20 +3,30 @@ import { useLocation, Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
-    const location = useLocation(); // Hook para obtener la ruta actual
+    const location = useLocation();
     const [activeLink, setActiveLink] = useState(location.pathname);
     const [moiColor, setMoiColor] = useState(location.pathname === '/' ? '#FFB980' : '#5FFFAB');
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
-        // Actualiza el estado cuando cambia la ubicación
         setActiveLink(location.pathname);
         setMoiColor(location.pathname === '/' ? '#FFB980' : '#5FFFAB');
     }, [location]);
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <header>
             <nav>
-                <ul>
+                <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`}
+                    onClick={toggleMenu} >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul className={isMenuOpen ? 'open' : ''}>
                     <li>
                         <Link
                             aria-label="Aller à Accueil"

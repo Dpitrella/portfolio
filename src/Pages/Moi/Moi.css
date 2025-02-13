@@ -20,14 +20,18 @@ h2 {
     animation: float 5s ease-in-out infinite;
 }
 .cont-photo {
+    display: flex;
+    align-items: center;
     right: 10%;
     width: 200px;
+    
 }
 .photo{
     height: 200px;
     width: 200px;
     object-fit: cover;
     border-radius: 50px;
+    box-shadow: 1px 17px 14px 9px rgba(0, 0, 0, 0.1);
 }
 
 .first-name {
@@ -97,6 +101,15 @@ p {
     }
 }
 /* phone */
-@media (max-width: 768px) {
-
+@media (max-width: 767px) {
+    h2 {
+        padding: 0px 20px 0px 20px;
+    }
+    .info {
+        width: 90%;
+    }
+    .contact-me {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
