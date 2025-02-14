@@ -2,6 +2,7 @@ import React from 'react'
 import './Skills.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../fontawesome'
+import { h3 } from 'framer-motion/client';
 const icons = [
     { name: 'html5', color: "#ff4242", alt: 'HTML' },
     { name: 'css3-alt', color: "#039be5", alt: 'CSS' },
@@ -12,12 +13,12 @@ const icons = [
 ];
 const getIcon = (iconName, color, alt) => {
     return (
-      <div className="icon-container">
-        <FontAwesomeIcon className='language' icon={['fab', iconName]} style={{ color: color }} />
-        <div className="icon-alt">{alt}</div>
-      </div>
+        <div className="icon-container">
+            <FontAwesomeIcon className='language' icon={['fab', iconName]} style={{ color: color }} />
+            <div className="icon-alt">{alt}</div>
+        </div>
     );
-  };
+};
 
 
 
@@ -25,25 +26,30 @@ function Skills() {
     return (
         <div className='skills-content'>
             <div className='icon-skills'>
-            {icons.map(icon => (
-                <div key={icon.name} className="icon-wrapper">
-                    {getIcon(icon.name, icon.color, icon.alt)}
-                </div>
-            ))}
+                {icons.map(icon => (
+                    <div key={icon.name} className="icon-wrapper">
+                        {getIcon(icon.name, icon.color, icon.alt)}
+                    </div>
+                ))}
             </div>
-            <div className='soft-skills'>
+            <div className='lang'>
+                <h3>LANGUES</h3>
                 <p>Español</p>
                 <p>Français</p>
                 <p>Italiano</p>
                 <p>English</p>
+            </div>
+
+            <div className='soft-skills'>
+               <h3>SOFT SKILLS</h3>
                 <p>Adaptabilité </p>
                 <p>Logique</p>
                 <p>Communication</p>
                 <p>Polyvalence</p>
                 <p>Agile method</p>
                 <p>Organisation</p>
-
             </div>
+
         </div>
 
     )

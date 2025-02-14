@@ -21,22 +21,22 @@ function Formation() {
                 </div>
             </div>
 
-
-            <div className='oc'>
+            <a href="https://www.facebook.com/escuelademusica.esnaola" target='blanck' className='oc'>
                 <FontAwesomeIcon icon="fa-solid fa-music" style={{ color: "#ffffff", }} />
                 <div className='oc-text'>
                     <h2>Violoncelliste</h2>
                     <p>Conservatoire - 4 ans</p>
                 </div>
-            </div>
-            <div className='oc'>
+            </a>
+
+            <a href="https://www.instagram.com/dantepitrella/" target='blanck' className='oc'>
                 <FontAwesomeIcon icon="fa-solid fa-camera" style={{ color: "#ffffff", }} />
                 <div className='oc-text'>
                     <h2>Photographie</h2>
                     <p>Autodidacte </p>
 
                 </div>
-            </div>
+                </a>
 
         </div>
     )

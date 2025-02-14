@@ -9,13 +9,32 @@
 
 .skills-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-
 }
+.skills-content h3 {
+    color: #FFB980;
+    
+}
+
 .soft-skills {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 1fr ;
+}
+.lang p {
+    color: #5FFFAB;
+    font-size: 22px;
+    transition: transform 0.5s ease;
+}
+.lang p:hover {
+    cursor: default;
+    transform: scale(1.2);
+}
+.lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 .soft-skills,
 p {
