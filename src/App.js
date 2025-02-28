@@ -18,6 +18,7 @@ function App() {
         <Helmet>
           <title>Dante Pitrella Portfolio</title>
           <meta name="description" content="Portfolio de Dante Pitrella - Développeur Web" />
+          <meta name="google-site-verification" content="JLJxO-ana1ytDUlffpAYy3t0bFZgxMeW3wnfUESX0Os" />
           <meta property="og:title" content="Dante Pitrella - Portfolio" />
           <meta property="og:description" content="Portfolio de Dante Pitrella - Développeur Web créatif et passionné" />
           <meta property="og:image" content={`${process.env.PUBLIC_URL}/2025-02-13.webp`} />
